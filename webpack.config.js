@@ -1,9 +1,8 @@
 
 const path = require('path') // Orquestrador dos caminhos dos arquivos
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
 module.exports = {
-  mode: isDevelopment ? 'development' : 'production',
+  mode: 'development',
   entry: path.resolve(__dirname, 'src', 'index.jsx'), //O arquivo principal da aplicação
   output: {
     path: path.resolve(__dirname, 'dist'),// Caminho de saida dos arquivos convertidos
